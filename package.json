@@ -1,0 +1,26 @@
+{
+  "name": "game-tricks",
+  "version": "1.0.0",
+  "description": "Game-tricks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd backend && npm install --force  && cd ../frontend && npm install --force && npm run --force build",
+    "start": "node backend/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J4ZO/game-tricks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J4ZO/game-tricks/issues"
+  },
+  "homepage": "https://github.com/J4ZO/game-tricks",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
