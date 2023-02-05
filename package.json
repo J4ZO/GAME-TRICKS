@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd backend && npm install --force  && cd ../frontend && npm install --force && npm run --force build",
-    "start": "node backend/server.js",
+    "build": "cd backend && npm install --force  && cd ../frontend && npm install --force && npm run --force build react-scripts",
+    "start": "node backend/server.js  react-scripts",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
